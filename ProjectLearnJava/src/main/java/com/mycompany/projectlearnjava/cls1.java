@@ -81,6 +81,12 @@ public class cls1 {
         System.out.println("s = " + s);//La variable s de type int est égale à 42
         
         
+        
+        //Formatage des nombres avec underscore "_"
+        int ent1 = 50_000;
+        int ent2 = 100_000;
+        int res_ent = (int) ent1 + (int) ent2 ;
+        System.out.println("le resultate est "+ res_ent);
         }
     
 }
