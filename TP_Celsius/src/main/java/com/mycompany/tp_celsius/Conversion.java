@@ -70,6 +70,16 @@ public class Conversion {
     //Fin du programme
             
             
+} 
+    public static double arrondi(double A, int B) {
+        return (double) ((int) (A * Math.pow(10, B) + .5)) / Math.pow(10,
+                B);
+    }
+
+  
+    
+}
+
 
 
            
@@ -80,13 +90,4 @@ public class Conversion {
         
 
             
-        } 
-  public static double arrondi(double A, int B) {
-        return (double) ((int) (A * Math.pow(10, B) + .5)) / Math.pow(10,
-                B);
-    }
-
-  
-    
-}
-
+      
