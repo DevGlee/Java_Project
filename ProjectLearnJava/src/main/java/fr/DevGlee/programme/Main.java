@@ -25,10 +25,16 @@ public class Main {
             System.out.println("Tu ne peux pas acheter le telephone ou tu en as déjà un ");
         }
 
-      String pseudoss ="DevGlee,Bijoul,Toby";
-      String[] pseudos= pseudoss.split(",");
-      System.out.println(pseudos[1]);
+        String pseudoss = "DevGlee,Bijoul,Toby";
+        String[] pseudos = pseudoss.split(",");
+        System.out.println(pseudos[1]);
+        int[] notes = {17, 8, 12, 20};
 
-        
+        int i = 0;
+
+        do {
+            System.out.println("bOKIT");
+        } while (!hasPhone);
+
     }
 }
