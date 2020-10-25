@@ -18,7 +18,7 @@ public class Window extends JFrame {
         setSize(width,height);
         setResizable(false);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(Jframe.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
     }
     
 }
