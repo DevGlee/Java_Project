@@ -17,7 +17,7 @@ public class Platform implements Drawable {
    private final int	initialX;
 	private final int	initialY;
 
-	private Color color = Color.WHITE;
+	private Color color = Color.RED;
 
 	public int	x;
 	public int	y;
