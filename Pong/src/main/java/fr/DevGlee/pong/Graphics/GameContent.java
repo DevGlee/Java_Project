@@ -18,11 +18,12 @@ public class GameContent {
     public Platform ai;
     public Ball ball;
 
+    public boolean isEnded = false;
     public GameContent() {
 
-        player = new Platform(5, 225);
-        ai = new Platform(480, 225);
-        ball = new Ball(250, 250);
+        player = new Platform(5, 225,2);
+        ai = new Platform(480, 225,2);
+        ball = new Ball(250, 250,2);
         resetPosition();
 
     }
