@@ -5,6 +5,7 @@
  */
 package fr.DevGlee.pong;
 
+import fr.DevGlee.pong.Graphics.GameContent;
 import fr.DevGlee.pong.Graphics.Window;
 import java.awt.Canvas;
 import java.awt.Color;
@@ -22,6 +23,7 @@ public class Game extends Canvas implements Runnable {
 
     private static final long serialVersionUID = 1L;
     private Window window;
+    private GameContent content;
     private Thread thread;
 
     private boolean shouldRun = false;
@@ -31,6 +33,7 @@ public class Game extends Canvas implements Runnable {
         Dimension size = new Dimension(500,500);
         setPreferredSize(size);
         window = new Window("Pong", 500, 500);
+        content= new GameContent();
         window.add(this);
     }
 
@@ -67,9 +70,8 @@ public class Game extends Canvas implements Runnable {
         }
         Graphics gc = buffer.getDrawGraphics();{
         
-        //Do graphics here
-        gc.setColor(Color.black);
-        gc.fillRect(0,0,500,500);
+            content.clear(gc);
+            content.display(gc);
     }
         gc.dispose();
         buffer.show();

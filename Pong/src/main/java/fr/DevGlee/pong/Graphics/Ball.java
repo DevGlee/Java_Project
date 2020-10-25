@@ -27,6 +27,7 @@ private Color color =Color.WHITE;
         initialY = y;
     }
 
+    @Override
     public void resetPosition() {
         x = initialX;
         y = initialY;
@@ -37,7 +38,8 @@ this.color=color;
     }
 
     public void draw(Graphics gc) {
-
+        gc.setColor(color);
+        gc.fillOval(x-6, y-6, 12, 12);
     }
 
 }
