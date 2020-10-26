@@ -9,28 +9,28 @@ package fr.DevGlee.fruit;
  *
  * @author DevGlee
  */
-public class Pineapple extends Fruit implements PeelFruit {
+public class Kiwi extends Fruit implements PeelFruit {
 
     private boolean peeled=false;
     
-    public Pineapple() {
-        super("Ananas");
+    public Kiwi() {
+        super("Fraise");
     }
+    
 
     @Override
     public void taste() {
-        
-        super.miam();
+        System.out.println("Le kiwi est sucré");
     }
 
     @Override
     public int getSize() {
-        return 3;
+        return 1;
     }
 
     @Override
     public boolean hasSeed() {
-        return false;
+        return true;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Pineapple extends Fruit implements PeelFruit {
 
     @Override
     public String getSkinType() {
-        return "doux";
+        return "";
     }
     
 }

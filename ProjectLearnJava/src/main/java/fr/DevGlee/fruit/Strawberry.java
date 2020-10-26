@@ -9,38 +9,26 @@ package fr.DevGlee.fruit;
  *
  * @author DevGlee
  */
-public class Pineapple extends Fruit implements PeelFruit {
+public class Strawberry extends Fruit {
 
-    private boolean peeled=false;
-    
-    public Pineapple() {
-        super("Ananas");
+    public Strawberry() {
+        super("Fraise");
     }
 
     @Override
     public void taste() {
-        
-        super.miam();
+        System.out.println("La fraise est sucré");
     }
 
     @Override
     public int getSize() {
-        return 3;
+        return 1;
     }
 
     @Override
     public boolean hasSeed() {
-        return false;
-    }
-
-    @Override
-    public boolean isPeeled() {
         return true;
-    }
-
-    @Override
-    public String getSkinType() {
-        return "doux";
+        
     }
     
 }
