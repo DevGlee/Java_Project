@@ -10,31 +10,27 @@ package fr.DevGlee.programme;
  * @author DevGlee
  */
 // Classe Principale
-public class Main {
+public class Main  {
 
     public static void main(String[] args) {
+        
+        Player p1 = new Player("Nomura",5.0,50.0);
+        System.out.println("nom :"+p1.getName());
+        p1.setPa(80.0);
+        System.out.println(" vie actuelle "+p1.getPv());
+        
+        
+        
 
-        int money = 850;
-        int pricephone = 800;
-        boolean hasPhone = false;
-
-        if (money >= pricephone && !hasPhone) {
-
-            System.out.println("Tu peux acheter le telephone");
-        } else {
-            System.out.println("Tu ne peux pas acheter le telephone ou tu en as déjà un ");
-        }
-
-        String pseudoss = "DevGlee,Bijoul,Toby";
-        String[] pseudos = pseudoss.split(",");
-        System.out.println(pseudos[1]);
-        int[] notes = {17, 8, 12, 20};
-
-        int i = 0;
-
-        do {
-            System.out.println("bOKIT");
-        } while (!hasPhone);
-
+        Player p2 = new Player("Baki",8.0,80.0);
+        
+        System.out.println(" nom: "+p2.getName());
+        
+        p2.damage(p1.getPa());
+        
+        System.out.println(p1.getName()+" Attaque "+p2.getName());
+        System.out.println(p2.getName()+" subit "+p1.getPa()+" de dégats");
+        System.out.println("Les pv de "+p2.getName()+" sont à "+p2.getPv());
+    
     }
 }
