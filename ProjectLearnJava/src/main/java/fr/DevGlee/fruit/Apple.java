@@ -11,9 +11,13 @@ package fr.DevGlee.fruit;
  */
 public class Apple extends Fruit {
 
+    public Apple() {
+        super("Pomme");
+    }
+
     @Override
     public void taste() {
-        System.out.println("La pomme a un goût sucré");
+        super.miam();
     }
 
     @Override

@@ -15,10 +15,10 @@ public class Main {
         
         Apple a = new Apple();
         a.taste();
-        a.miam();
+       
         
         Pineapple p = new Pineapple();
         p.taste();
-        p.miam();
+        
     }
 }

@@ -11,9 +11,14 @@ package fr.DevGlee.fruit;
  */
 public class Pineapple extends Fruit {
 
+    public Pineapple() {
+        super("Ananas");
+    }
+
     @Override
     public void taste() {
-        System.out.println("L'ananas a un goût un peu acide");
+        
+        super.miam();
     }
 
     @Override
