@@ -20,7 +20,11 @@ public class Main {
         Pineapple p = new Pineapple();
         p.taste();
         
-        if(!(a instanceof PeelFruit)) {
-            System.out.println("Ce fruit n'implemente pas l'interface PeelFruit");
-        }}
+        if(a instanceof PeelFruit) {
+           PeelFruit fruit= p;
+           
+           
+        }
+    
+    }
 }
