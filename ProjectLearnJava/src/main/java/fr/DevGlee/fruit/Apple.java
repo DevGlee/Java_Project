@@ -39,5 +39,10 @@ public class Apple extends Fruit implements PeelFruit {
     public String getSkinType() {
         return "lisse";
     }
+
+    @Override
+    public String getSkinColor() {
+        return "vert ou rouge";
+    }
     
 }

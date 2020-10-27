@@ -9,28 +9,25 @@ package fr.DevGlee.fruit;
  *
  * @author DevGlee
  */
-public class Pineapple extends Fruit implements PeelFruit {
-
+public class Mango extends Fruit implements PeelFruit {
     
-    
-    public Pineapple() {
-        super("Ananas");
+    public Mango(){
+        super("Mangue");
     }
-
+    
     @Override
     public void taste() {
-        
-        super.miam();
+       super.miam();
     }
 
     @Override
     public int getSize() {
-        return 3;
+        return 2;
     }
 
     @Override
     public boolean hasSeed() {
-        return false;
+        return true;
     }
 
     @Override
@@ -40,12 +37,12 @@ public class Pineapple extends Fruit implements PeelFruit {
 
     @Override
     public String getSkinType() {
-        return "doux";
+        return "lisse";
     }
 
     @Override
     public String getSkinColor() {
-        return "jaune";
+        return "verte";
     }
     
 }

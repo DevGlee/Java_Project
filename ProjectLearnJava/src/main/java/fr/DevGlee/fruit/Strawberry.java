@@ -9,7 +9,7 @@ package fr.DevGlee.fruit;
  *
  * @author DevGlee
  */
-public class Strawberry extends Fruit {
+public class Strawberry extends Fruit implements PeelFruit {
 
     public Strawberry() {
         super("Fraise");
@@ -29,6 +29,21 @@ public class Strawberry extends Fruit {
     public boolean hasSeed() {
         return true;
         
+    }
+
+    @Override
+    public boolean isPeeled() {
+        return false;
+    }
+
+    @Override
+    public String getSkinType() {
+        return "ferme";
+    }
+
+    @Override
+    public String getSkinColor() {
+        return "rouge";
     }
     
 }

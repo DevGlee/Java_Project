@@ -11,7 +11,7 @@ package fr.DevGlee.fruit;
  */
 public class Kiwi extends Fruit implements PeelFruit {
 
-    private boolean peeled=false;
+  
     
     public Kiwi() {
         super("Fraise");
@@ -41,6 +41,11 @@ public class Kiwi extends Fruit implements PeelFruit {
     @Override
     public String getSkinType() {
         return "";
+    }
+
+    @Override
+    public String getSkinColor() {
+        return "marron et vert";
     }
     
 }

@@ -20,7 +20,10 @@ public class Main {
         Pineapple p = new Pineapple();
         p.taste();
         
-        if(a instanceof PeelFruit) {
+        Mango m= new Mango();
+        m.taste();
+        
+        if(m instanceof PeelFruit) {
            PeelFruit fruit= p;
            
            
