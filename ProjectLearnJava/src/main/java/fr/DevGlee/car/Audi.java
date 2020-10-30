@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Audi extends Car implements Feature {
 
-    String model = getModel();
+   
     public Audi() {
         super("A1 Sportback",1175,40,140,"Essence Sans Plomb 95");
     }
