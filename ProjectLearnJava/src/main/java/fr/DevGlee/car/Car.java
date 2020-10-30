@@ -5,6 +5,8 @@
  */
 package fr.DevGlee.car;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DevGlee
@@ -29,6 +31,11 @@ public abstract class Car {
      * @return the model
      */
     public String getModel() {
+         System.out.println("Entrez le model du véhicule");
+        Scanner scanner = new Scanner( System.in );
+        String Model = scanner.nextLine();
+      
+     
         return model;
     }
 
@@ -43,6 +50,9 @@ public abstract class Car {
      * @return the weight
      */
     public double getWeight() {
+         System.out.println("Entrez le poids du véhicule");
+        Scanner scanner = new Scanner( System.in );
+        double Weight = scanner.nextDouble();
         return weight;
     }
 
@@ -57,6 +67,9 @@ public abstract class Car {
      * @return the reservoir
      */
     public double getReservoir() {
+         System.out.println("Entrez la taille du reservoir du véhicule");
+        Scanner scanner = new Scanner( System.in );
+      double Reservoir = scanner.nextDouble();
         return reservoir;
     }
 
@@ -71,6 +84,9 @@ public abstract class Car {
      * @return the horsepower
      */
     public int getHorsepower() {
+        System.out.println("Entrez les chevaux du véhicule");
+        Scanner scanner = new Scanner( System.in );
+        int Horsepower = scanner.nextInt();
         return horsepower;
     }
 
@@ -85,6 +101,9 @@ public abstract class Car {
      * @return the fuel
      */
     public String getFuel() {
+         System.out.println("Entrez le type de carburant du véhicule");
+        Scanner scanner = new Scanner( System.in );
+        String Fuel = scanner.nextLine();
         return fuel;
     }
 
@@ -92,6 +111,7 @@ public abstract class Car {
      * @param fuel the fuel to set
      */
     public void setFuel(String fuel) {
+        
         this.fuel = fuel;
     }
  

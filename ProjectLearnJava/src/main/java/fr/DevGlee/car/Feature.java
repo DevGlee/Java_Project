@@ -9,12 +9,14 @@ package fr.DevGlee.car;
  *
  * @author DevGlee
  */
-public interface AdvancedFeature {
-    
+public interface Feature  {
+
+   
+
     public abstract String Engine();
-    
+
     public abstract double Speed();
-    
-    public abstract double Acceleration(); 
-    
+
+    public abstract double Acceleration();
+
 }

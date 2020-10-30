@@ -5,21 +5,31 @@
  */
 package fr.DevGlee.car;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DevGlee
  */
-public class Audi extends Car implements AdvancedFeature {
+public class Audi extends Car implements Feature {
 
-    
-    public Audi () {
-        super("A1", 1175, 40, 82, "Sans plomb");
-
+    String model = getModel();
+    public Audi() {
+        super("A1 Sportback",1175,40,140,"Essence Sans Plomb 95");
     }
+
+ 
+  
+    
+
 
     @Override
     public String Engine() {
-        return ("Moteur 30 TFSI 6-speed");
+        
+        System.out.println("Entrez le moteur du véhicule");
+        Scanner scanner = new Scanner( System.in );
+        String Engine = scanner.nextLine();
+        return Engine;
     }
 
     @Override
@@ -31,6 +41,7 @@ public class Audi extends Car implements AdvancedFeature {
     public double Acceleration() {
        return 9.9;
     }
+
     
     
 }
