@@ -52,7 +52,7 @@ public class CalculatriceIncrementale {
     public int diviser(int a, int b) {
         a = Math.abs(a);
         b = Math.abs(b);
-        int res = 0;
+        int res = 1;
         while (a >= b) {
             for (int i = 0; i < b; i++) {
                 a--;
